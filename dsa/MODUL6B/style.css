@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #102E50; /* Background biru */
+    padding: 40px;
+    color: #fff; /* Warna teks putih untuk kontras dengan background biru */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #F5C45E; /* Warna kuning untuk judul */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #F5C45E; /* Warna kuning untuk subtitle */
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #E78B48; /* Aksen warna oranye pada border input */
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #F5C45E; /* Warna kuning untuk tombol */
+    color: #102E50; /* Teks berwarna biru untuk tombol */
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #E78B48; /* Warna oranye saat hover */
+    color: #fff; /* Teks menjadi putih saat hover */
+}
+
+button:active {
+    background-color: #BE3D2A; /* Warna merah tua saat tombol ditekan */
+}
+
+/* Center the Button Group */
+button[type="submit"] {
+    display: inline-block;
+    width: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Styling for the list */
+div {
+    font-size: 16px;
+}
+
+.list {
+    text-align: center;
+}
+
+/* Button Group Container */
+.button-group {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap in case of small screens */
+    justify-content: center;
+}

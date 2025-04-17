@@ -1,14 +1,9 @@
-<html> 
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-</html>
 
 <?php
 session_start();
 $data = isset($_POST['data']) ? $_POST['data'] : "";
 // Inisialisasi variable
-$num = $data != ""  ? $_SESSION['data'] : array();
+$num = isset($_SESSION['data']) ? $_SESSION['data'] : array();
 
 //Push array in session variable
 if (isset($_POST['push'])){
@@ -31,7 +26,6 @@ if (isset($_POST['pop']) && isset($_SESSION['data'])){
         return;
     }
     array_pop($_SESSION['data']);
-    $arr = $_SESSION['data'];
     echo "<script>alert('data terhapus')</script>";
     echo "<a href='index.php'>Kembali</a> ";
 }
@@ -56,7 +50,7 @@ if (isset($_POST['peak'])  && isset($_SESSION['data'])){
         echo "<br><a href='index.php'>Kembali</a>";
         return;
     }
-    echo end($_SESSION['data']) . "<br>";
+    echo "nilai teratas : " . end($_SESSION['data']) . "<br>";
     echo "<a href='index.php'>Kembali</a>";
 }
 
